@@ -1,0 +1,55 @@
+ // https://github.com/NIkmironov/Lab.git
+
+1. #include <stdio.h>
+#include <cmath>
+
+int main()
+{
+	int N = 846; // Задаем исходную секунду
+	int s = (N % 60); // Вычисляем остаток от целочисленного деления на 60.
+	printf_s("%i", s); // Выводим результат на экран
+	return 0;
+}
+2. #include <stdio.h>
+
+int main()
+{
+	int K = 456; // Задаем день
+	while (K >= 6) // До тех пор, пока значение больше 7, вычитаем по одной неделе.
+		K -= 6;
+	printf_s("%i", K);
+	return 0;
+}
+3. #include <stdio.h>
+
+int main()
+{
+	int K = 78; // Задаем день
+	int N = 6; // Задаем первый день недели в году
+	while (K > 7) // До тех пор, пока значение больше 7, вычитаем по одной неделе.
+		K -= 7;
+	K = K + N-1; 
+	printf_s("%i", K);
+	return 0;
+}
+4. #include <stdio.h>
+
+int main() {
+	int A = 4; // Задаем стороны прямоугольника и квадрата.
+	int B = 6;
+	int C = 8;
+	int N = ((A / C) * (B / C)); // Рассчитываем кол-во квадратов в прямоугольнике.
+	int S = (A * B - N * C * C); // Рассчитываем оставшуюся площадь.
+	printf_s("%i\n", N); // Выводим результаты
+	printf_s("%i", S);
+	return 0;
+}
+5. #include <stdio.h>
+
+int main() {
+	int N = 1508;
+	int Y = (N - N % 10)/100; // Вычисляем век
+	printf_s("%i\n", Y); // Выводим результаты
+	return 0;
+}
+
